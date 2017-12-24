@@ -1,0 +1,10 @@
+h1 {
+	width: 100%;
+	margin: auto;
+	font-size: 500%;
+	text-align: center;
+}
+
+.category-row {
+	display: flex;
+}

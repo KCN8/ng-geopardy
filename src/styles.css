@@ -1,3 +1,9 @@
 body {
+	background-color: black;
 	display: flex;
+	font-family: gyparody;
+	justify-content: center;
+	color: white;
+	margin: 0;
+	padding: 0;
 }
