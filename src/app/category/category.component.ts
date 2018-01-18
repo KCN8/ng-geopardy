@@ -9,11 +9,11 @@ import { CategoryService } from '../category.service';
   styleUrls: ['./category.component.css']
 })
 export class CategoryComponent implements OnInit {
-  allQuestions;
-  categoryID;
-  categoryTitle;
-  questionID;
-  value;
+  allQuestions
+  categoryID
+  categoryTitle
+  questionID
+  value
 
   constructor(private categoryService: CategoryService, private http: HttpClient) { }
 
@@ -27,5 +27,4 @@ export class CategoryComponent implements OnInit {
         this.value = data.value
       })
   }
-
 }
