@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { CategoryService } from '../category.service';
+import { CategoryService } from '../../category.service';
 
 @Component({
-  selector: 'app-category',
-  templateUrl: './category.component.html',
-  styleUrls: ['./category.component.css'],
-  providers: [CategoryService]
+  selector: 'app-questions',
+  templateUrl: './questions.component.html',
+  styleUrls: ['./questions.component.css']
 })
-export class CategoryComponent implements OnInit {
+export class QuestionsComponent implements OnInit {
   allQuestions
   categoryID
   categoryTitle
@@ -26,4 +25,5 @@ export class CategoryComponent implements OnInit {
         this.value = data.value
       })
   }
+
 }
