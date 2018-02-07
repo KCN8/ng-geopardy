@@ -17,13 +17,13 @@ export class QuestionsComponent implements OnInit {
 
   ngOnInit() {
     this.categoryService.getCategories()
-      .subscribe(data => {
-        this.allQuestions = data.allQuestions
-        this.categoryID = data.categoryID
-        this.categoryTitle = data.categoryTitle
-        this.questionID = data.questionID
-        this.value = data.value
-      })
+      // .subscribe(data => {
+      //   this.allQuestions = data.allQuestions
+      //   this.categoryID = data.categoryID
+      //   this.categoryTitle = data.categoryTitle
+      //   this.questionID = data.questionID
+      //   this.value = data.value
+      // })
   }
 
 }

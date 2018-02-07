@@ -8,22 +8,14 @@ import { CategoryService } from '../category.service';
   providers: [CategoryService]
 })
 export class CategoryComponent implements OnInit {
-  allQuestions
-  categoryID
-  categoryTitle
-  questionID
-  value
+  category = 0
 
   constructor(private categoryService: CategoryService) { }
 
   ngOnInit() {
     this.categoryService.getCategories()
       .subscribe(data => {
-        this.allQuestions = data.allQuestions
-        this.categoryID = data.categoryID
-        this.categoryTitle = data.categoryTitle
-        this.questionID = data.questionID
-        this.value = data.value
+        this.category = data[0].category_id
       })
   }
 }
