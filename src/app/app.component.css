@@ -5,6 +5,7 @@ h1 {
 	text-align: center;
 }
 
-.category-row {
+.category-column {
 	display: flex;
+	flex-direction: column;
 }

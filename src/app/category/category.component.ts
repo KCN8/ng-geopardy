@@ -8,14 +8,14 @@ import { CategoryService } from '../category.service';
   providers: [CategoryService]
 })
 export class CategoryComponent implements OnInit {
-  category = 0
+  category = ''
 
   constructor(private categoryService: CategoryService) { }
 
   ngOnInit() {
     this.categoryService.getCategories()
       .subscribe(data => {
-        this.category = data[0].category_id
+          this.category = data[0].category.title
       })
   }
 }

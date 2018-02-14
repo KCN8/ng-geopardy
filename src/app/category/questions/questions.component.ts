@@ -7,23 +7,20 @@ import { CategoryService } from '../../category.service';
   styleUrls: ['./questions.component.css']
 })
 export class QuestionsComponent implements OnInit {
-  allQuestions
-  categoryID
-  categoryTitle
-  questionID
-  value
+  data = {}
 
   constructor(private categoryService: CategoryService) { }
 
+  
   ngOnInit() {
     this.categoryService.getCategories()
-      // .subscribe(data => {
-      //   this.allQuestions = data.allQuestions
-      //   this.categoryID = data.categoryID
-      //   this.categoryTitle = data.categoryTitle
-      //   this.questionID = data.questionID
-      //   this.value = data.value
-      // })
+    .subscribe(data => {
+      this.data = data
+    })
+  }
+
+  dataParse = () => {
+    console.log(this.data)
   }
 
 }
