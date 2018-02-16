@@ -8,7 +8,7 @@ export class CategoryService {
 	constructor(private http: HttpClient) { }
 
 	getCategories(){
-		const randomCategory = Math.floor(Math.random() * 1200)
+		const randomCategory = Math.floor(Math.random() * 100)
 		return this.http.get(`http://www.jservice.io/api/clues/?category=${randomCategory}`)
 	}
 

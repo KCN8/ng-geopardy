@@ -7,7 +7,6 @@ import { CategoryService } from '../../../category.service';
   styleUrls: ['./questions.component.css']
 })
 export class QuestionsComponent implements OnInit {
-  @Input() value = 0
 
   constructor(private categoryService: CategoryService) { }
 

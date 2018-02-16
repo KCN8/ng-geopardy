@@ -6,10 +6,12 @@ import { CategoryService } from './category.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  data = {}
-  dataIndexs = []
-  index = 0
-  values = []
+  boardLength:any[] = [1,2,3,4]
+  data:{} = {}
+  dataIndexs:any[] = []
+  index:number = 0
+  values:any[] = []
+  questions:any[] = []
 
   constructor(private categoryService: CategoryService) { }
 
@@ -21,7 +23,9 @@ export class AppComponent implements OnInit {
         for (let i = 0; i < 5; i++) {
           this.index = this.dataIndexs[i]
           this.values.push(data[this.index].value)
+          this.questions.push(data[this.index].question)
         }
       })
   }
+
 }

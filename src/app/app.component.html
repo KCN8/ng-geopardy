@@ -1,7 +1,4 @@
 <h1>Geopardy</h1>
 <div class="board-column">
-	<app-board-column></app-board-column>
-	<app-board-column></app-board-column>
-	<app-board-column></app-board-column>
-	<app-board-column></app-board-column>
+	<app-board-column *ngFor="let length of boardLength"></app-board-column>
 </div>

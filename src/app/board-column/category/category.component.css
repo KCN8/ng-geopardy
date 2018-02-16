@@ -1,5 +1,6 @@
 body {
-	height: 100%;
+	max-height: 5em;
+	min-height: 5em;
 	width: 10em;
 	background-color: #FF8A00;
 	border: 3px solid rgb(179, 95, 0);
