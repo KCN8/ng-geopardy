@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { CategoryService } from './category.service';
+
+import { CategoryService } from '../category.service';
+
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-board-column',
+  templateUrl: './board-column.component.html',
+  styleUrls: ['./board-column.component.css']
 })
-export class AppComponent implements OnInit {
+export class BoardColumnComponent implements OnInit {
   data = {}
   dataIndexs = []
   index = 0
@@ -24,4 +26,5 @@ export class AppComponent implements OnInit {
         }
       })
   }
+
 }

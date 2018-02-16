@@ -1,0 +1,17 @@
+.category-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.value {
+	height: 100%;
+	width: 10em;
+	background-color: #FF8A00;
+	border: 3px solid rgb(179, 95, 0);
+	border-radius: 3%;
+	font-family: sans-serif, Arial, Helvetica, sans-serif;
+	font-size: 150%;
+	font-weight: bolder;
+	text-align: center;
+	padding-top: -1em;
+}
